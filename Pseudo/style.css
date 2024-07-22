@@ -38,3 +38,14 @@ ul li a{
 .navigation ul li:nth-child(even){
     background-color: blue;
 }
+
+#pseudo-elements p::before{
+    content: "Note: ";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#pseudo-elements p::after{
+    content: "(End of note)";
+    font-style: italic;
+    text-transform: uppercase;
+}
